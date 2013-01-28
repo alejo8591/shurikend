@@ -1,0 +1,12 @@
+@charset "UTF-8";
+// Foundation Features
+// =============
+@import "compass/css3";
+// install and configure gem in requires for proyect
+@import "modular-scale";
+@import "functions/_all";
+@import "_settings";
+@import "mixins/_all";
+@import "common/_base";
+@import "components/_grid", "components/modules/_all";
+@import "components/modules/_mqueries";
