@@ -1,19 +1,17 @@
-# [tuktuk-sass 0.3.0 (at the same time retains the liberation tuktuk)](http://tuktuk.tapquo.com)
-### Simple (but powerful) RWD Framework converted to Sass - Compass (in its original flavor you find in https://github.com/soyjavi/tuktuk.git) - tuktuk created by @soyjavi
-
+# [shurikend 0.1.0 ()]()
 
 ## Quick start
 
 Three quick start options are available:
 
-* [Download the latest release](https://github.com/alejo8591/tuktuk-sass.git).
-* Or Clone the repo: `https://github.com/alejo8591/tuktuk-sass.git`.
+* [Download the latest release]().
+* Or Clone the repo: `https://github.com/alejo8591/shurikend.git`.
 * Check the directory named "examples".
 
 ¡Enjoy!
 
 
-## Tools for working with tuktuk-sass
+## Tools for working with shurikend
 
 ### Sass: Basic modification and understanding
 
@@ -72,7 +70,7 @@ For more information on SemVer, please visit http://semver.org/.
 
 ## Bug tracker
 
-Have a bug or a feature request? [Please open a new issue](https://github.com/alejo8591/tuktuk-sass/issues). 
+Have a bug or a feature request? [Please open a new issue](https://github.com/alejo8591/shurikend/issues). 
 + **¡Allow For!** Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/).
 
 
@@ -90,7 +88,6 @@ Keep track of development and community news.
 * Follow [@html5facil on Twitter](http://twitter.com/htm5facil).
 * Follow [@ninjacodetv on Twitter](http://twitter.com/ninjacodetv).
 * Follow [@maquetafacil on Twitter](http://twitter.com/maquetafacil).
-* Have a question that's not a feature request or bug report? [Ask on the LinkedIn Group.]( http://www.linkedin.com/groups/html5facil-4554208?trk=myg_ugrp_ovr)
 
 
 ## Important information from the original version released (tuktuk)
@@ -100,10 +97,11 @@ More info in http://tuktuk.tapquo.com
 [Source code](https://github.com/soyjavi/tuktuk) and [issue tracking](https://github.com/soyjavi/tuktuk/issues) are available on Github.
 
 ## Credits
-Created by [Javier Jiménez](http://twitter.com/soyjavi).
-Copyright (c) 2011, 2012 by Tapquo Inc.
+Created by [Alejandro Romero](http://twitter.com/soyjavi).
+Copyright (c) 2012, 2013 by html5facil.
 
 ## Licensing Options
-Released under MIT license, https://raw.github.com/soyjavi/QuoJS/master/LICENSE.txt
+Released under MIT license
+* Have a question that's not a feature request or bug report? [Ask on the LinkedIn Group.]( http://www.linkedin.com/groups/html5facil-4554208?trk=myg_ugrp_ovr)
 
 See LICENSE.txt for license.
