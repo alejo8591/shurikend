@@ -1,4 +1,7 @@
+# Node
 node_modules
 build
+# Sass and Compass Cache
 .sass-cache
+# MacOSX
 .DS_Store

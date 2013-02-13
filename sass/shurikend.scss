@@ -4,9 +4,39 @@
 @import "compass/css3";
 // install and configure gem in requires for proyect
 @import "modular-scale";
-@import "functions/_all";
-@import "_settings";
-@import "mixins/_all";
-@import "common/_base";
-@import "components/_grid", "components/modules/_all";
-@import "components/modules/_mqueries";
+// functions for framework
+@import "radix/_function.convert-number";
+@import "radix/_function.grid-calc";
+// global settings
+@import "radix/_global.settings";
+// mixins
+@import "radix/_mixin.font-size";
+@import "radix/_mixin.css-triangle";
+@import "radix/_mixin.respond-to";
+@import "radix/_mixin.clearfix";
+@import "radix/_mixin.semantic-grid";
+// usual values
+@import "radix/_usual.ratios";
+@import "radix/_usual.globals";
+@import "radix/_usual.typography";
+@import "radix/_usual.forms";
+// global Grid
+@import "radix/_global.grid";
+// modules
+@import "modules/_module.buttons";
+@import "modules/_module.navbar";
+@import "modules/_module.topbar";
+// @import "modules/_module.offcanvas";
+@import "modules/_module.orbit";
+// modal
+@import "modules/_module.modals";
+// next element type
+@import "modules/_module.joyride";
+// simple gallery with modal
+@import "modules/_module.clearing";
+// tabs of the shurikend
+@import "modules/_module.tabs";
+// module UI
+@import "modules/_module.ui";
+// module mqueries
+@import "modules/_module.mqueries";
