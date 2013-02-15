@@ -1,6 +1,6 @@
 /* Requires: normalize.css */
 
-/* Global Reset & Standards ---------------------- */
+//Global Reset & Standards ----------------------
 
   *, *:before, *:after { 
     @include box-sizing(border-box); }
@@ -18,7 +18,7 @@
     position: relative; 
     -webkit-font-smoothing: $fontSmoothing; }
 
-/* Links ---------------------- */
+// Links ----------------------
 
   a img { border:none; }
   a { color: $mainColor; text-decoration: none; line-height: inherit; }
@@ -26,7 +26,7 @@
   a:focus { color: darken($mainColor, 5%); }
   p a, p a:visited { line-height: inherit; }
 
-/* Misc ---------------------- */
+// Misc ----------------------
 
   .left        { float: left; }
   .right       { float: right; }
@@ -43,5 +43,5 @@
   #map_canvas img { max-width: none; }
   #map_canvas object { max-width: none; }
 
-  /* Reset for strange margins by default on <figure> elements */
+  // Reset for strange margins by default on <figure> elements
   figure { margin: 0; }

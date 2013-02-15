@@ -1,6 +1,8 @@
 
 @function convert-number-to-word($num) {
+ // There is no zero column
   $count:1;
+  // maximum twenty-four columns
   @each $word in one,two,three,four,five,six,seven,eight,nine,ten,eleven,
     twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,nineteen,
     twenty,twentyone,twentytwo,twentythree,twentyfour{

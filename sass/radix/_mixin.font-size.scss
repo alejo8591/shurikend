@@ -1,6 +1,8 @@
 // Font size mixin to include px and rem
 
   @mixin font-size($size, $is-important: false) {
+    // unitless: returns whether a number has units or not.
+    // if: returns one of two values, depending on whether or not a condition is true.
     $size: if(unitless($size), $size, $size / 1px);
     
     @if $is-important {
