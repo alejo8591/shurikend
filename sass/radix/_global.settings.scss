@@ -269,6 +269,12 @@ $screenSmall: 768px !default;
 $screenMedium: 1279px !default;
 $screenXlarge: 1441px !default;
 
+// Font Awesome variables
+
+$fontAwesomePath: "./font" !default;
+$borderColor: #eee;
+$iconMuted:   #eee;
+
 // Saving for better em-based testing
 // $screenSmall: 44em !default;
 // $screenMedium: 77em !default;
