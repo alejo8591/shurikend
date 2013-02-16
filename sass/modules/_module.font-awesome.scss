@@ -12,6 +12,350 @@
   font-style: normal;
 }
 
+/* font-face */
+@include face;
+
+/* global foundicon styles */
+[class*="#{$classPrefix}"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+[class*="#{$classPrefix}"]:before {
+  font-family: $fontName;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/* general icons for IE7 */
+[class*="#{$classPrefix}"] {
+  font-family: $fontName;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* icons for social */
+@include i-class(thumb-up,"000");
+@include i-class(thumb-down,"001");
+@include i-class(rss,"002");
+@include i-class(facebook,"003");
+@include i-class(twitter,"004");
+@include i-class(pinterest,"005");
+@include i-class(github,"006");
+@include i-class(path,"007");
+@include i-class(linkedin,"008");
+@include i-class(dribbble,"009");
+@include i-class(stumble-upon,"00a");
+@include i-class(behance,"00b");
+@include i-class(reddit,"00c");
+@include i-class(google-plus,"00d");
+@include i-class(youtube,"00e");
+@include i-class(vimeo,"00f");
+@include i-class(flickr,"010");
+@include i-class(slideshare,"011");
+@include i-class(picassa,"012");
+@include i-class(skype,"013");
+@include i-class(steam,"014");
+@include i-class(instagram,"015");
+@include i-class(foursquare,"016");
+@include i-class(delicious,"017");
+@include i-class(chat,"018");
+@include i-class(torso,"019");
+@include i-class(tumblr,"01a");
+@include i-class(video-chat,"01b");
+@include i-class(digg,"01c");
+@include i-class(wordpress,"01d");
+
+
+@include ie-class(thumb-up,"000");
+@include ie-class(thumb-down,"001");
+@include ie-class(rss,"002");
+@include ie-class(facebook,"003");
+@include ie-class(twitter,"004");
+@include ie-class(pinterest,"005");
+@include ie-class(github,"006");
+@include ie-class(path,"007");
+@include ie-class(linkedin,"008");
+@include ie-class(dribbble,"009");
+@include ie-class(stumble-upon,"00a");
+@include ie-class(behance,"00b");
+@include ie-class(reddit,"00c");
+@include ie-class(google-plus,"00d");
+@include ie-class(youtube,"00e");
+@include ie-class(vimeo,"00f");
+@include ie-class(flickr,"010");
+@include ie-class(slideshare,"011");
+@include ie-class(picassa,"012");
+@include ie-class(skype,"013");
+@include ie-class(steam,"014");
+@include ie-class(instagram,"015");
+@include ie-class(foursquare,"016");
+@include ie-class(delicious,"017");
+@include ie-class(chat,"018");
+@include ie-class(torso,"019");
+@include ie-class(tumblr,"01a");
+@include ie-class(video-chat,"01b");
+@include ie-class(digg,"01c");
+@include ie-class(wordpress,"01d");
+
+
+// icons for accessibility
+@include i-class(wheelchair,"000");
+@include i-class(speaker,"001");
+@include i-class(fontsize,"002");
+@include i-class(eject,"003");
+@include i-class(view-mode,"004");
+@include i-class(eyeball,"005");
+@include i-class(asl,"006");
+@include i-class(person,"007");
+@include i-class(question,"008");
+@include i-class(adult,"009");
+@include i-class(child,"00a");
+@include i-class(glasses,"00b");
+@include i-class(cc,"00c");
+@include i-class(blind,"00d");
+@include i-class(braille,"00e");
+@include i-class(iphone-home,"00f");
+@include i-class(w3c,"010");
+@include i-class(css,"011");
+@include i-class(key,"012");
+@include i-class(hearing-impaired,"013");
+@include i-class(male,"014");
+@include i-class(female,"015");
+@include i-class(network,"016");
+@include i-class(guidedog,"017");
+@include i-class(universal-access,"018");
+@include i-class(elevator,"019");
+
+@include ie-class(wheelchair,"000");
+@include ie-class(speaker,"001");
+@include ie-class(fontsize,"002");
+@include ie-class(eject,"003");
+@include ie-class(view-mode,"004");
+@include ie-class(eyeball,"005");
+@include ie-class(asl,"006");
+@include ie-class(person,"007");
+@include ie-class(question,"008");
+@include ie-class(adult,"009");
+@include ie-class(child,"00a");
+@include ie-class(glasses,"00b");
+@include ie-class(cc,"00c");
+@include ie-class(blind,"00d");
+@include ie-class(braille,"00e");
+@include ie-class(iphone-home,"00f");
+@include ie-class(w3c,"010");
+@include ie-class(css,"011");
+@include ie-class(key,"012");
+@include ie-class(hearing-impaired,"013");
+@include ie-class(male,"014");
+@include ie-class(female,"015");
+@include ie-class(network,"016");
+@include ie-class(guidedog,"017");
+@include ie-class(universal-access,"018");
+@include ie-class(elevator,"019");
+
+
+/* icons General */
+@include i-class(settings,"000");
+@include i-class(heart,"001");
+@include i-class(star,"002");
+@include i-class(plus,"003");
+@include i-class(minus,"004");
+@include i-class(checkmark,"005");
+@include i-class(remove,"006");
+@include i-class(mail,"007");
+@include i-class(calendar,"008");
+@include i-class(page,"009");
+@include i-class(tools,"00a");
+@include i-class(globe,"00b");
+@include i-class(home,"00c");
+@include i-class(quote,"00d");
+@include i-class(people,"00e");
+@include i-class(monitor,"00f");
+@include i-class(laptop,"010");
+@include i-class(phone,"011");
+@include i-class(cloud,"012");
+@include i-class(error,"013");
+@include i-class(right-arrow,"014");
+@include i-class(left-arrow,"015");
+@include i-class(up-arrow,"016");
+@include i-class(down-arrow,"017");
+@include i-class(trash,"018");
+@include i-class(add-doc,"019");
+@include i-class(edit,"01a");
+@include i-class(lock,"01b");
+@include i-class(unlock,"01c");
+@include i-class(refresh,"01d");
+@include i-class(paper-clip,"01e");
+@include i-class(video,"01f");
+@include i-class(photo,"020");
+@include i-class(graph,"021");
+@include i-class(idea,"022");
+@include i-class(mic,"023");
+@include i-class(cart,"024");
+@include i-class(address-book,"025");
+@include i-class(compass,"026");
+@include i-class(flag,"027");
+@include i-class(location,"028");
+@include i-class(clock,"029");
+@include i-class(folder,"02a");
+@include i-class(inbox,"02b");
+@include i-class(website,"02c");
+@include i-class(smiley,"02d");
+@include i-class(search,"02e");
+
+@include ie-class(settings,"000");
+@include ie-class(heart,"001");
+@include ie-class(star,"002");
+@include ie-class(plus,"003");
+@include ie-class(minus,"004");
+@include ie-class(checkmark,"005");
+@include ie-class(remove,"006");
+@include ie-class(mail,"007");
+@include ie-class(calendar,"008");
+@include ie-class(page,"009");
+@include ie-class(tools,"00a");
+@include ie-class(globe,"00b");
+@include ie-class(home,"00c");
+@include ie-class(quote,"00d");
+@include ie-class(people,"00e");
+@include ie-class(monitor,"00f");
+@include ie-class(laptop,"010");
+@include ie-class(phone,"011");
+@include ie-class(cloud,"012");
+@include ie-class(error,"013");
+@include ie-class(right-arrow,"014");
+@include ie-class(left-arrow,"015");
+@include ie-class(up-arrow,"016");
+@include ie-class(down-arrow,"017");
+@include ie-class(trash,"018");
+@include ie-class(add-doc,"019");
+@include ie-class(edit,"01a");
+@include ie-class(lock,"01b");
+@include ie-class(unlock,"01c");
+@include ie-class(refresh,"01d");
+@include ie-class(paper-clip,"01e");
+@include ie-class(video,"01f");
+@include ie-class(photo,"020");
+@include ie-class(graph,"021");
+@include ie-class(idea,"022");
+@include ie-class(mic,"023");
+@include ie-class(cart,"024");
+@include ie-class(address-book,"025");
+@include ie-class(compass,"026");
+@include ie-class(flag,"027");
+@include ie-class(location,"028");
+@include ie-class(clock,"029");
+@include ie-class(folder,"02a");
+@include ie-class(inbox,"02b");
+@include ie-class(website,"02c");
+@include ie-class(smiley,"02d");
+@include ie-class(search,"02e");
+
+
+/* icons general enclosed */
+@include i-class(settings-enclosed,"000");
+@include i-class(heart,"001");
+@include i-class(star,"002");
+@include i-class(plus,"003");
+@include i-class(minus,"004");
+@include i-class(checkmark-enclosed,"005");
+@include i-class(remove,"006");
+@include i-class(mail,"007");
+@include i-class(calendar,"008");
+@include i-class(page,"009");
+@include i-class(tools,"00a");
+@include i-class(globe,"00b");
+@include i-class(home,"00c");
+@include i-class(quote,"00d");
+@include i-class(people,"00e");
+@include i-class(monitor,"00f");
+@include i-class(laptop,"010");
+@include i-class(phone,"011");
+@include i-class(cloud,"012");
+@include i-class(error,"013");
+@include i-class(right-arrow,"014");
+@include i-class(left-arrow,"015");
+@include i-class(up-arrow,"016");
+@include i-class(down-arrow,"017");
+@include i-class(trash,"018");
+@include i-class(add-doc,"019");
+@include i-class(edit,"01a");
+@include i-class(lock,"01b");
+@include i-class(unlock,"01c");
+@include i-class(refresh,"01d");
+@include i-class(paper-clip,"01e");
+@include i-class(video,"01f");
+@include i-class(photo,"020");
+@include i-class(graph,"021");
+@include i-class(idea,"022");
+@include i-class(mic,"023");
+@include i-class(cart,"024");
+@include i-class(address-book,"025");
+@include i-class(compass,"026");
+@include i-class(flag,"027");
+@include i-class(location,"028");
+@include i-class(clock,"029");
+@include i-class(folder,"02a");
+@include i-class(inbox,"02b");
+@include i-class(website,"02c");
+@include i-class(smiley,"02d");
+@include i-class(search,"02e");
+
+@include ie-class(settings,"000");
+@include ie-class(heart,"001");
+@include ie-class(star,"002");
+@include ie-class(plus,"003");
+@include ie-class(minus,"004");
+@include ie-class(checkmark,"005");
+@include ie-class(remove,"006");
+@include ie-class(mail,"007");
+@include ie-class(calendar,"008");
+@include ie-class(page,"009");
+@include ie-class(tools,"00a");
+@include ie-class(globe,"00b");
+@include ie-class(home,"00c");
+@include ie-class(quote,"00d");
+@include ie-class(people,"00e");
+@include ie-class(monitor,"00f");
+@include ie-class(laptop,"010");
+@include ie-class(phone,"011");
+@include ie-class(cloud,"012");
+@include ie-class(error,"013");
+@include ie-class(right-arrow,"014");
+@include ie-class(left-arrow,"015");
+@include ie-class(up-arrow,"016");
+@include ie-class(down-arrow,"017");
+@include ie-class(trash,"018");
+@include ie-class(add-doc,"019");
+@include ie-class(edit,"01a");
+@include ie-class(lock,"01b");
+@include ie-class(unlock,"01c");
+@include ie-class(refresh,"01d");
+@include ie-class(paper-clip,"01e");
+@include ie-class(video,"01f");
+@include ie-class(photo,"020");
+@include ie-class(graph,"021");
+@include ie-class(idea,"022");
+@include ie-class(mic,"023");
+@include ie-class(cart,"024");
+@include ie-class(address-book,"025");
+@include ie-class(compass,"026");
+@include ie-class(flag,"027");
+@include ie-class(location,"028");
+@include ie-class(clock,"029");
+@include ie-class(folder,"02a");
+@include ie-class(inbox,"02b");
+@include ie-class(website,"02c");
+@include ie-class(smiley,"02d");
+@include ie-class(search,"02e");
+
 /*  Font Awesome styles
     ------------------------------------------------------- */
 [class^="icon-"],
@@ -36,18 +380,16 @@
 
 /* more sprites.less reset */
 .icon-white,
-.nav-pills > .active > a > [class^="icon-"],
-.nav-pills > .active > a > [class*=" icon-"],
-.nav-list > .active > a > [class^="icon-"],
-.nav-list > .active > a > [class*=" icon-"],
-.navbar-inverse .nav-bar > .active > a > [class^="icon-"],
-.navbar-inverse .nav-bar > .active > a > [class*=" icon-"],
-.dropdown-menu > li > a:hover > [class^="icon-"],
-.dropdown-menu > li > a:hover > [class*=" icon-"],
-.dropdown-menu > .active > a > [class^="icon-"],
-.dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-submenu:hover > a > [class^="icon-"],
-.dropdown-submenu:hover > a > [class*=" icon-"] {
+.sub-nav > .active > a > [class^="icon-"],
+.sub-nav > .active > a > [class*=" icon-"],
+.nav .vertical > .active > a > [class^="icon-"],
+.nav .vertical > .active > a > [class*=" icon-"],
+.dropdown > li > a:hover > [class^="icon-"],
+.dropdown > li > a:hover > [class*=" icon-"],
+.dropdown > .active > a > [class^="icon-"],
+.dropdown > .active > a > [class*=" icon-"],
+.dropdown:hover > a > [class^="icon-"],
+.dropdown:hover > a > [class*=" icon-"] {
   background-image: none;
 }
 
@@ -82,7 +424,7 @@ a {
   }
 }
 
-.nav-tabs, .nav-pills {
+.tabs, .nav.vertical {
   [class^="icon-"],
   [class*=" icon-"] {
     /* keeps button heights with and without icons the same */
@@ -184,13 +526,10 @@ ul.icons {
   [class*=" icon-"] {
     &.pull-left, &.pull-right {
       &.icon-2x { margin-top: .25em; }}}
-  } 
-
-}
-
-.button .large {
-  [class^="icon-"],
-  [class*=" icon-"] {
+  }
+  &.large {
+    [class^="icon-"],
+    [class*=" icon-"] {
     margin-top: 0; // overrides bootstrap default
     &.pull-left, &.pull-right {
       &.icon-2x { margin-top: .05em; }
@@ -198,8 +537,9 @@ ul.icons {
     &.pull-left.icon-2x { margin-right: .2em; }
     &.pull-right.icon-2x { margin-left: .2em; }
   }
-}
+} 
 
+}
 
 .icon-spin {
   display: inline-block;
