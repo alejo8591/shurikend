@@ -6283,11 +6283,11 @@ table.hide-for-medium {
   border-radius: 2px;
 }
 
-/* line 105, ../../../../sass/modules/_module.font-icon.scss */
+/* line 104, ../../../../sass/modules/_module.font-icon.scss */
 .icon-2x {
   font-size: 4em;
 }
-/* line 107, ../../../../sass/modules/_module.font-icon.scss */
+/* line 106, ../../../../sass/modules/_module.font-icon.scss */
 .icon-2x.icon-border {
   border-width: 2px;
   -webkit-border-radius: 4px;
@@ -6297,11 +6297,11 @@ table.hide-for-medium {
   border-radius: 4px;
 }
 
-/* line 112, ../../../../sass/modules/_module.font-icon.scss */
+/* line 111, ../../../../sass/modules/_module.font-icon.scss */
 .icon-3x {
   font-size: 6em;
 }
-/* line 114, ../../../../sass/modules/_module.font-icon.scss */
+/* line 113, ../../../../sass/modules/_module.font-icon.scss */
 .icon-3x.icon-border {
   border-width: 3px;
   -webkit-border-radius: 5px;
@@ -6311,11 +6311,11 @@ table.hide-for-medium {
   border-radius: 5px;
 }
 
-/* line 119, ../../../../sass/modules/_module.font-icon.scss */
+/* line 118, ../../../../sass/modules/_module.font-icon.scss */
 .icon-4x {
   font-size: 8em;
 }
-/* line 121, ../../../../sass/modules/_module.font-icon.scss */
+/* line 120, ../../../../sass/modules/_module.font-icon.scss */
 .icon-4x.icon-border {
   border-width: 4px;
   -webkit-border-radius: 6px;
@@ -6325,7 +6325,7 @@ table.hide-for-medium {
   border-radius: 6px;
 }
 
-/* line 128, ../../../../sass/modules/_module.font-icon.scss */
+/* line 127, ../../../../sass/modules/_module.font-icon.scss */
 .icon-spin {
   display: inline-block;
   -moz-animation: spin 2s infinite linear;
@@ -6335,82 +6335,82 @@ table.hide-for-medium {
 }
 
 @-moz-keyframes spin {
-  /* line 137, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 136, ../../../../sass/modules/_module.font-icon.scss */
   0% {
     -moz-transform: rotate(0deg);
   }
 
-  /* line 138, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 137, ../../../../sass/modules/_module.font-icon.scss */
   100% {
     -moz-transform: rotate(359deg);
   }
 }
 
 @-webkit-keyframes spin {
-  /* line 141, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 140, ../../../../sass/modules/_module.font-icon.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 142, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 141, ../../../../sass/modules/_module.font-icon.scss */
   100% {
     -webkit-transform: rotate(359deg);
   }
 }
 
 @-o-keyframes spin {
-  /* line 145, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 144, ../../../../sass/modules/_module.font-icon.scss */
   0% {
     -o-transform: rotate(0deg);
   }
 
-  /* line 146, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 145, ../../../../sass/modules/_module.font-icon.scss */
   100% {
     -o-transform: rotate(359deg);
   }
 }
 
 @-ms-keyframes spin {
-  /* line 149, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 148, ../../../../sass/modules/_module.font-icon.scss */
   0% {
     -ms-transform: rotate(0deg);
   }
 
-  /* line 150, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 149, ../../../../sass/modules/_module.font-icon.scss */
   100% {
     -ms-transform: rotate(359deg);
   }
 }
 
 @keyframes spin {
-  /* line 153, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 152, ../../../../sass/modules/_module.font-icon.scss */
   0% {
     transform: rotate(0deg);
   }
 
-  /* line 154, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 153, ../../../../sass/modules/_module.font-icon.scss */
   100% {
     transform: rotate(359deg);
   }
 }
 
 @-moz-document url-prefix() {
-  /* line 158, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 157, ../../../../sass/modules/_module.font-icon.scss */
   .icon-spin {
     height: .9em;
   }
 
-  /* line 159, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 158, ../../../../sass/modules/_module.font-icon.scss */
   .button .icon-spin {
     height: auto;
   }
 
-  /* line 160, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 159, ../../../../sass/modules/_module.font-icon.scss */
   .icon-spin.icon-large {
     height: 1.25em;
   }
 
-  /* line 161, ../../../../sass/modules/_module.font-icon.scss */
+  /* line 160, ../../../../sass/modules/_module.font-icon.scss */
   .button .icon-spin.icon-large {
     height: .75em;
   }
