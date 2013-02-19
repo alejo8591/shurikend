@@ -270,21 +270,26 @@ $screenMedium: 1279px !default;
 $screenXlarge: 1441px !default;
 
 // Font Awesome variables
-
 $fontAwesomePath: "./font" !default;
 $borderColor: #eee;
 $iconMuted:   #eee;
 
 // iconic foundation
-
+$fontName: "SocialFoundicons";
+$classPrefix: "icon-";
+$fontFileNameAwesome: "./font/fontawesome-webfont";
 $fontFileNameSocial: "./font/social_foundicons";
-$fontFileNameAccessinility: "./font/accessibility_foundicons";
+$fontFileNameAccessibility: "./font/accessibility_foundicons";
 $fontFileNameGeneral: "./font/general_foundicons";
 $fontFileNameEnclosed: "./font/general_enclosed_foundicons";
-// Default value
-$fontName: "SocialFoundicons";
-$classPrefix: "shuricon-";
 
+// Default value
+$fontNameSocial: "SocialFoundicons";
+$fontNameAccesibility: "AccessibilityFoundicons";
+$fontNameGeneral: "GeneralFoundicons";
+$fontNameEnclosed: "GeneralEnclosedFoundicons";
+$fontNameAwesome: "FontAwesome";
+$nameClass:"social"
 // Saving for better em-based testing
 // $screenSmall: 44em !default;
 // $screenMedium: 77em !default;
