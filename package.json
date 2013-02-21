@@ -1,0 +1,10 @@
+{
+  "name": "shurikend",
+  "description": "Framework Frontend for ninja coders",
+  "version": "0.1.0",
+  "homepage": "http://shurikend.com",
+  "author": {
+    "name": "Alejandro Romero",
+    "site": "https://twitter.com/alejo8591"},
+  "license": [ {"type": "MIT"} ]
+}
