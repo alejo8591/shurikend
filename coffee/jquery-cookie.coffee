@@ -1,3 +1,9 @@
+###
+  Inspired in jquery-cookie
+  jquery-cookie: jquery-cookie.coffee
+###
+undefined_ = undefined
+
 (($, document, undefined_) ->
   raw = (s) ->
     s

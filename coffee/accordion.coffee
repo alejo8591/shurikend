@@ -1,3 +1,7 @@
+###
+  Inspired in foundation v.3.2
+  accordion: accordion.coffee
+###
 (($, window, undefined_) ->
   "use strict"
   $.fn.foundationAccordion = (options) ->

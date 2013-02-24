@@ -1,4 +1,8 @@
-(($, window, undefided) ->
+###
+  Inspired in foundation v.3.2
+  alerts: alerts.coffee
+###
+(($, window) ->
   "use strict"
   $.fn.foundationAlerts = (options) ->
      settings = $.extend({

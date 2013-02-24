@@ -1,3 +1,7 @@
+###
+  Inspired in foundation v.3.2
+  buttons: buttons.coffee
+###
 (($, window, undefined_) ->
   "use strict"
   $.fn.foundationButtons = (options) ->

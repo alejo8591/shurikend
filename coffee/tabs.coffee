@@ -1,4 +1,8 @@
-(($, window, document, undefined_) ->
+###
+  Inspired in foundation v.3.2
+  tabs: tabs.coffee
+###
+(($, window, document) ->
   "use strict"
   settings =
     callback: $.noop
@@ -43,9 +47,9 @@
 
   $.fn.foundationTabs = (method) ->
     if methods[method]
-      methods[method].apply this, Array::slice.call(arguments_, 1)
+      methods[method].apply this, Array::slice.call(arguments, 1)
     else if typeof method is "object" or not method
-      methods.init.apply this, arguments_
+      methods.init.apply this, arguments
     else
       $.error "Method " + method + " does not exist on jQuery.foundationTabs"
 ) jQuery, this, @document

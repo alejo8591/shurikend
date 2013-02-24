@@ -1,5 +1,8 @@
-undefined_ = undefined
-(($, window, undefined_) ->
+###
+  Inspired in foundation v.3.2
+  mediaQueryToggle: mediaQueryToggle.coffee
+###
+(($, window) ->
   "use strict"
   $.fn.foundationMediaQueryViewer = (options) ->
     settings = $.extend(options, # Press 'M'

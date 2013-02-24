@@ -1,3 +1,7 @@
+###
+  Inspired in foundation v.3.2
+  forms: forms.coffee
+###
 #
 # * jQuery Custom Forms Plugin 1.0
 # * www.ZURB.com

@@ -8,6 +8,10 @@ module.exports = function(grunt) {
 				files: {
 					'test/assets/javascripts/shurikend.js': 
 					[
+						'coffee/jquery-cookie.coffee',
+						'coffee/jquery-event-move.coffee',
+						'coffee/jquery-event-swipe.coffee',
+						'coffee/jquery-offcanvas.coffee',
 						'coffee/mediaQueryToggle.coffee',
 						'coffee/jquery-placeholder.coffee',
 						'coffee/alerts.coffee',
@@ -18,15 +22,11 @@ module.exports = function(grunt) {
 						'coffee/tabs.coffee',
 						'coffee/navigation.coffee',
 						'coffee/modal.coffee',
-						'coffee/orbit.coffee',
 						'coffee/topbar.coffee',
-						'coffee/jquery-cookie.coffee',
 						'coffee/joyride.coffee',
-						'coffee/clearing.coffee',
-						'coffee/jquery-event-move.coffee',
-						'coffee/jquery-event-swipe.coffee',
-						'coffee/jquery-offcanvas.coffee',
 						'coffee/magellan.coffee',
+						'coffee/clearing.coffee',
+						'coffee/orbit.coffee',
 						'coffee/app.coffee'
 					] // compile and concat into single file
     			}

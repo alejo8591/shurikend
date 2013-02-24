@@ -1,3 +1,7 @@
+###
+  Inspired in foundation v.3.2
+  magellan: magellan.coffee
+###
 #
 # * jQuery Foundation Magellan 0.1.0
 # * http://foundation.zurb.com
@@ -5,10 +9,10 @@
 # * Free to use under the MIT license.
 # * http://www.opensource.org/licenses/mit-license.php
 #
-
 #jslint unparam: true, browser: true, indent: 2 
-(($, window, undefined_) ->
+(($, window) ->
   "use strict"
+
   $.fn.foundationMagellan = (options) ->
     $window = $(window)
     $document = $(document)
@@ -59,9 +63,6 @@
               position: ""
               top: ""
 
-
-
-    
     # Determine when a destination has been reached, ah0y!
     $lastDestination = $("[data-magellan-destination]:last")
     
@@ -79,6 +80,5 @@
           
           # In large screens we may hit the bottom of the page and dont reach the top of the last magellan-destination, so lets force it
           $("[data-magellan-arrival]:last").trigger "magellan.arrival"  if scrolltopPlusHeight >= $document.outerHeight(true) and lastDestinationTop > windowScrollTop and lastDestinationTop < scrolltopPlusHeight
-
 
 ) jQuery, this

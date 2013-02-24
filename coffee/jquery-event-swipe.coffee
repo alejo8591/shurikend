@@ -1,3 +1,7 @@
+###
+  Inspired in jquery-event-swipe
+  jquery-event-swipe: jquery-event-swipe.coffee
+###
 # jQuery.event.swipe
 # 0.5
 # Stephen Band
@@ -32,9 +36,9 @@
   # Faster fingers can travel shorter distances to be considered
   # swipes. 'sensitivity' controls how much. Bigger is shorter.
   moveend = (e) ->
-    w = undefined
-    h = undefined
-    event = undefined
+    w = undefined_
+    h = undefined_
+    event = undefined_
     w = e.target.offsetWidth
     h = e.target.offsetHeight
     

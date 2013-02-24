@@ -1,4 +1,8 @@
-(($, window, undefined_) ->
+###
+  Inspired in foundation v.3.2
+  app: app.coffee
+###
+(($, window) ->
   "use strict"
   $doc = $(document)
   Modernizr = window.Modernizr
@@ -10,7 +14,7 @@
     (if $.fn.foundationTopBar then $doc.foundationTopBar() else null)
     (if $.fn.foundationCustomForms then $doc.foundationCustomForms() else null)
     (if $.fn.foundationMediaQueryViewer then $doc.foundationMediaQueryViewer() else null)
-    (if $.fn.foundationTabs then $doc.foundationTabs(callback: $.foundation.customForms.appendCustomMarkup) else null)
+    (if $.fn.foundationTabs then $doc.foundationTabs({callback: $.foundation.customForms.appendCustomMarkup}) else null)
     (if $.fn.foundationTooltips then $doc.foundationTooltips() else null)
     (if $.fn.foundationMagellan then $doc.foundationMagellan() else null)
     (if $.fn.foundationClearing then $doc.foundationClearing() else null)

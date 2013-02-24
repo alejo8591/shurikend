@@ -1,3 +1,7 @@
+###
+  Inspired in foundation v.3.2
+  modal: modal.coffee
+###
 #
 # * jQuery Reveal Plugin 1.1
 # * www.ZURB.com

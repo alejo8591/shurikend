@@ -1,3 +1,7 @@
+###
+  Inspired in foundation v.3.2
+  clearing: clearing.coffee
+###
 #
 # * jQuery Foundation Clearing 1.2.1
 # * http://foundation.zurb.com
@@ -8,6 +12,10 @@
 
 #jslint unparam: true, browser: true, indent: 2 
 (($, window, document, undefined_) ->
+  caption=()->
+  fix_height=()->
+  center=()->
+  shift=()->
   "use strict"
   defaults =
     templates:
@@ -30,13 +38,15 @@
         options = options or {}
         extendMethods = extendMethods or {}
         settings = $el.data("fndtn.clearing.settings")
+        
         unless settings
           options.$parent = $el.parent()
           $el.data "fndtn.clearing.settings", $.extend({}, defaults, options)
           cl.assemble $el.find("li")
           unless defaults.initialized
             cl.events $el
-            cl.swipe_events()  if Modernizr.touch
+            if Modernizr.touch 
+              cl.swipe_events()
 
 
     events: (el) ->
@@ -95,11 +105,11 @@
         image.loaded ->
           root.addClass "clearing-blackout"
           container.addClass "clearing-container"
-          @caption visible_image.find(".clearing-caption"), $image
+          caption visible_image.find(".clearing-caption"), $image
           visible_image.show()
-          @fix_height target
-          @center image
-          @shift current, target, ->
+          fix_height target
+          center image
+          shift current, target, ->
             target.siblings().removeClass "visible"
             target.addClass "visible"
 
@@ -113,8 +123,8 @@
         else
           target.closest ".clearing-blackout"
       ($(this)))
-      container = undefined
-      visible_image = undefined
+      container = undefined_
+      visible_image = undefined_
       if this is e.target and root
         container = root.find("div:first")
         visible_image = container.find(".visible-img")
@@ -197,7 +207,7 @@
       direction = @direction(clearing, current, target)
       left = parseInt(clearing.css("left"), 10)
       width = target.outerWidth()
-      skip_shift = undefined
+      skip_shift = undefined_
       
       # we use jQuery animate instead of CSS transitions because we
       # need a callback to unlock the next animation
@@ -242,7 +252,7 @@
       li_width = lis.outerWidth() + (lis.outerWidth() / 4)
       up_count = Math.floor($(".clearing-container").outerWidth() / li_width) - 1
       target_index = lis.index(target)
-      response = undefined
+      response = undefined_
       defaults.up_count = up_count
       if @adjacent(defaults.prev_index, target_index)
         if (target_index > up_count) and target_index > defaults.prev_index
@@ -277,9 +287,9 @@
 
   $.fn.foundationClearing = (method) ->
     if cl[method]
-      cl[method].apply this, Array::slice.call(arguments_, 1)
+      cl[method].apply this, Array::slice.call(arguments, 1)
     else if typeof method is "object" or not method
-      cl.init.apply this, arguments_
+      cl.init.apply this, arguments
     else
       $.error "Method " + method + " does not exist on jQuery.foundationClearing"
 

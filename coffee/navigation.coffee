@@ -1,3 +1,7 @@
+###
+  Inspired in foundation v.3.2
+  navigation: navigation.coffee
+###
 (($, window, undefined_) ->
   "use strict"
   $.fn.foundationNavigation = (options) ->
@@ -25,7 +29,7 @@
           flyout = $(this).children(".flyout")
           inputs = flyout.find("input")
           hasFocus = (inputs) ->
-            focus = undefined
+            focus = undefined_
             if inputs.length > 0
               inputs.each ->
                 focus = true  if $(this).is(":focus")

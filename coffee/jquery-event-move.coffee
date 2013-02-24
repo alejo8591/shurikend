@@ -1,3 +1,7 @@
+###
+  Inspired in jquery-event-move
+  jquery-event-move: jquery-event-move.coffee
+###
 # jquery.event.move
 #
 # 1.3.1
@@ -29,6 +33,7 @@
     
     # Browser globals
     module jQuery
+
 ) (jQuery, undefined_) ->
   # Number of pixels a pressed pointer travels before movestart
   # event is fired.
@@ -94,6 +99,7 @@
   identifiedTouch = (touchList, id) ->
     i = undefined
     l = undefined
+
     return touchList.identifiedTouch(id)  if touchList.identifiedTouch
     
     # touchList.identifiedTouch() does not exist in

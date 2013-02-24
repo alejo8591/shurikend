@@ -1,3 +1,7 @@
+###
+  Inspired in foundation v.3.2
+  orbit: orbit.coffee
+###
 #
 # * jQuery Orbit Plugin 1.4.0
 # * www.ZURB.com/playground
@@ -540,7 +544,7 @@
   bindToLoad = (element, callback) ->
     $this = $(element)
     $this.bind "load.imageready", ->
-      callback.apply element, arguments_
+      callback.apply element, arguments
       $this.unbind "load.imageready"
 
   options = {}
@@ -558,7 +562,7 @@
           bindToLoad this, handleObj.handler
           $this.attr "src", src
         else if @complete or @readyState is 4
-          handleObj.handler.apply this, arguments_
+          handleObj.handler.apply this, arguments
         else
           bindToLoad this, handleObj.handler
 

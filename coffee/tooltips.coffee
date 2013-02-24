@@ -1,3 +1,7 @@
+###
+  Inspired in foundation v.3.2
+  tooltips: tooltips.coffee
+###
 #
 # * jQuery Foundation Tooltips 2.0.2
 # * http://foundation.zurb.com
@@ -161,9 +165,9 @@
 
   $.fn.foundationTooltips = (method) ->
     if methods[method]
-      methods[method].apply this, Array::slice.call(arguments_, 1)
+      methods[method].apply this, Array::slice.call(arguments, 1)
     else if typeof method is "object" or not method
-      methods.init.apply this, arguments_
+      methods.init.apply this, arguments
     else
       $.error "Method " + method + " does not exist on jQuery.foundationTooltips"
 ) jQuery, this

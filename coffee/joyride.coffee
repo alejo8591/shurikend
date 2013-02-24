@@ -1,3 +1,7 @@
+###
+  Inspired in foundation v.3.2
+  joyride: joyride.coffee
+###
 #
 # * jQuery Foundation Joyride Plugin 2.0.3
 # * http://foundation.zurb.com
@@ -113,8 +117,8 @@
       methods.show()
 
     tip_template: (opts) ->
-      $blank = undefined
-      content = undefined
+      $blank = undefined_
+      content = undefined_
       opts.tip_class = opts.tip_class or ""
       $blank = $(settings.template.tip).addClass(opts.tip_class)
       content = $.trim($(opts.li).html()) + methods.button_text(opts.button_text) + settings.template.link + methods.timer_instance(opts.index)
@@ -124,7 +128,7 @@
       $blank[0]
 
     timer_instance: (index) ->
-      txt = undefined
+      txt = undefined_
       if (index is 0 and settings.startTimerOnClick and settings.timer > 0) or settings.timer is 0
         txt = ""
       else
@@ -154,10 +158,10 @@
 
     show: (init) ->
       opts = {}
-      ii = undefined
+      ii = undefined_
       opts_arr = []
       opts_len = 0
-      p = undefined
+      p = undefined_
       $timer = null
       
       # are we paused?
@@ -256,8 +260,8 @@
       settings.$target = $sel()
 
     scroll_to: ->
-      window_half = undefined
-      tipOffset = undefined
+      window_half = undefined_
+      tipOffset = undefined_
       window_half = settings.$window.height() / 2
       tipOffset = Math.ceil(settings.$target.offset().top - window_half + settings.$next_tip.outerHeight())
       $("html, body").stop().animate
@@ -441,9 +445,9 @@
 
   $.fn.joyride = (method) ->
     if methods[method]
-      methods[method].apply this, Array::slice.call(arguments_, 1)
+      methods[method].apply this, Array::slice.call(arguments, 1)
     else if typeof method is "object" or not method
-      methods.init.apply this, arguments_
+      methods.init.apply this, arguments
     else
       $.error "Method " + method + " does not exist on jQuery.joyride"
 ) jQuery, this

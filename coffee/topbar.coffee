@@ -1,3 +1,7 @@
+###
+  Inspired in foundation v.3.2
+  topbar: topbar.coffee
+###
 #
 # * jQuery Foundation Top Bar 2.0.4
 # * http://foundation.zurb.com
@@ -7,7 +11,7 @@
 #
 
 #jslint unparam: true, browser: true, indent: 2 
-(($, window, undefined_) ->
+(($, window) ->
   "use strict"
   settings =
     index: 0
@@ -109,9 +113,9 @@
 
   $.fn.foundationTopBar = (method) ->
     if methods[method]
-      methods[method].apply this, Array::slice.call(arguments_, 1)
+      methods[method].apply this, Array::slice.call(arguments, 1)
     else if typeof method is "object" or not method
-      methods.init.apply this, arguments_
+      methods.init.apply this, arguments
     else
       $.error "Method " + method + " does not exist on jQuery.foundationTopBar"
 

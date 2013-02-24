@@ -1,3 +1,7 @@
+###
+  Inspired in jquery-offcanvas
+  jquery-offcanvas: jquery-offcanvas.coffee
+###
 ((window, document, $) ->
   
   # Set the negative margin on the top menu for slide-menu pages

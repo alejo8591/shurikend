@@ -1,3 +1,8 @@
+###
+  Inspired in jquery-placeholder
+  jquery-placeholder: jquery-placeholder.coffee
+###
+
 #! http://mths.be/placeholder v2.0.7 by @mathias 
 ((window, document, $) ->
   
