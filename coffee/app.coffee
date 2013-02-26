@@ -7,7 +7,7 @@
   $doc = $(document)
   Modernizr = window.Modernizr
   $(document).ready ->
-    (if $.fn.foundationAlerts then $doc.foundationAlerts() else null)
+    (if $.fn.Alerts then $doc.Alerts() else null)
     (if $.fn.foundationButtons then $doc.foundationButtons() else null)
     (if $.fn.foundationAccordion then $doc.foundationAccordion() else null)
     (if $.fn.foundationNavigation then $doc.foundationNavigation() else null)

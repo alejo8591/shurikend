@@ -879,7 +879,7 @@
 
   (function($, window) {
     "use strict";
-    return $.fn.foundationAlerts = function(options) {
+    return $.fn.Alerts = function(options) {
       var settings;
       settings = $.extend({
         callback: $.noop
@@ -3630,8 +3630,8 @@
     $doc = $(document);
     Modernizr = window.Modernizr;
     $(document).ready(function() {
-      if ($.fn.foundationAlerts) {
-        $doc.foundationAlerts();
+      if ($.fn.Alerts) {
+        $doc.Alerts();
       } else {
         null;
       }

@@ -4,7 +4,7 @@
 ###
 (($, window) ->
   "use strict"
-  $.fn.foundationAlerts = (options) ->
+  $.fn.Alerts = (options) ->
      settings = $.extend({
       callback : $.noop
      }, options) 
