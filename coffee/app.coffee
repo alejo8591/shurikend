@@ -12,12 +12,11 @@
     (if $.fn.Accordion then $doc.Accordion() else null)
     (if $.fn.Navigation then $doc.Navigation() else null)
     (if $.fn.TopBar then $doc.TopBar() else null)
-    (if $.fn.foundationCustomForms then $doc.foundationCustomForms() else null)
+    # (if $.fn.foundationCustomForms then $doc.foundationCustomForms() else null)
     (if $.fn.MediaQueryViewer then $doc.MediaQueryViewer() else null)
-    (if $.fn.foundationTabs then $doc.foundationTabs({callback: $.foundation.customForms.appendCustomMarkup}) else null)
+    (if $.fn.Tabs then $doc.Tabs({callback: $.foundation.customForms.appendCustomMarkup}) else null)
     (if $.fn.Tooltips then $doc.Tooltips() else null)
     (if $.fn.Magellan then $doc.Magellan() else null)
-    (if $.fn.foundationClearing then $doc.foundationClearing() else null)
 
     (if $.fn.placeholder then $("input, textarea").placeholder() else null)
 

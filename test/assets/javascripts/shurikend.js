@@ -1585,13 +1585,13 @@
         return $tab.trigger("click.fndtn");
       }
     };
-    return $.fn.foundationTabs = function(method) {
+    return $.fn.Tabs = function(method) {
       if (methods[method]) {
         return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
       } else if (typeof method === "object" || !method) {
         return methods.init.apply(this, arguments);
       } else {
-        return $.error("Method " + method + " does not exist on jQuery.foundationTabs");
+        return $.error("Method " + method + " does not exist on jQuery.Tabs");
       }
     };
   })(jQuery, this, this.document);
@@ -3655,18 +3655,13 @@
       } else {
         null;
       }
-      if ($.fn.foundationCustomForms) {
-        $doc.foundationCustomForms();
-      } else {
-        null;
-      }
       if ($.fn.MediaQueryViewer) {
         $doc.MediaQueryViewer();
       } else {
         null;
       }
-      if ($.fn.foundationTabs) {
-        $doc.foundationTabs({
+      if ($.fn.Tabs) {
+        $doc.Tabs({
           callback: $.foundation.customForms.appendCustomMarkup
         });
       } else {
@@ -3679,11 +3674,6 @@
       }
       if ($.fn.Magellan) {
         $doc.Magellan();
-      } else {
-        null;
-      }
-      if ($.fn.foundationClearing) {
-        $doc.foundationClearing();
       } else {
         null;
       }
