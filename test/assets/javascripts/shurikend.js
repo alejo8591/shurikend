@@ -1206,9 +1206,9 @@
         var $self;
         $self = $(this);
         if ($self.data("tooltips")) {
-          return $self.foundationTooltips("destroy").foundationTooltips("init");
+          return $self.Tooltips("destroy").Tooltips("init");
         } else {
-          return $self.foundationTooltips("init");
+          return $self.Tooltips("init");
         }
       },
       destroy: function() {
@@ -1221,13 +1221,13 @@
         });
       }
     };
-    return $.fn.foundationTooltips = function(method) {
+    return $.fn.Tooltips = function(method) {
       if (methods[method]) {
         return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
       } else if (typeof method === "object" || !method) {
         return methods.init.apply(this, arguments);
       } else {
-        return $.error("Method " + method + " does not exist on jQuery.foundationTooltips");
+        return $.error("Method " + method + " does not exist on jQuery.Tooltips");
       }
     };
   })(jQuery, this);
@@ -2667,7 +2667,7 @@
 
   (function($, window) {
     "use strict";
-    return $.fn.foundationMagellan = function(options) {
+    return $.fn.Magellan = function(options) {
       var $document, $expedition, $fixedMagellan, $lastDestination, $window, defaults;
       $window = $(window);
       $document = $(document);
@@ -3672,13 +3672,13 @@
       } else {
         null;
       }
-      if ($.fn.foundationTooltips) {
-        $doc.foundationTooltips();
+      if ($.fn.Tooltips) {
+        $doc.Tooltips();
       } else {
         null;
       }
-      if ($.fn.foundationMagellan) {
-        $doc.foundationMagellan();
+      if ($.fn.Magellan) {
+        $doc.Magellan();
       } else {
         null;
       }

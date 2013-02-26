@@ -13,7 +13,7 @@
 (($, window) ->
   "use strict"
 
-  $.fn.foundationMagellan = (options) ->
+  $.fn.Magellan = (options) ->
     $window = $(window)
     $document = $(document)
     $fixedMagellan = $("[data-magellan-expedition=fixed]")

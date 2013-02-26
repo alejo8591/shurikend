@@ -152,7 +152,7 @@
 
     reload: ->
       $self = $(this)
-      (if ($self.data("tooltips")) then $self.foundationTooltips("destroy").foundationTooltips("init") else $self.foundationTooltips("init"))
+      (if ($self.data("tooltips")) then $self.Tooltips("destroy").Tooltips("init") else $self.Tooltips("init"))
 
     destroy: ->
       @each ->
@@ -163,11 +163,11 @@
         ).remove()
 
 
-  $.fn.foundationTooltips = (method) ->
+  $.fn.Tooltips = (method) ->
     if methods[method]
       methods[method].apply this, Array::slice.call(arguments, 1)
     else if typeof method is "object" or not method
       methods.init.apply this, arguments
     else
-      $.error "Method " + method + " does not exist on jQuery.foundationTooltips"
+      $.error "Method " + method + " does not exist on jQuery.Tooltips"
 ) jQuery, this
