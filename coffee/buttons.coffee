@@ -4,7 +4,7 @@
 ###
 (($, window, undefined_) ->
   "use strict"
-  $.fn.foundationButtons = (options) ->
+  $.fn.Buttons = (options) ->
     $doc = $(document)
     config = $.extend(
       dropdownAsToggle: false

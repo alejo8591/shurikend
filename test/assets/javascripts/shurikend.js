@@ -906,7 +906,7 @@
 
   (function($, window, undefined_) {
     "use strict";
-    return $.fn.foundationAccordion = function(options) {
+    return $.fn.Accordion = function(options) {
       var hasHover;
       hasHover = function(accordion) {
         return accordion.hasClass("hover") && !Modernizr.touch;
@@ -954,7 +954,7 @@
 
   (function($, window, undefined_) {
     "use strict";
-    return $.fn.foundationButtons = function(options) {
+    return $.fn.Buttons = function(options) {
       var $doc, closeDropdowns, config, largeButtonHeight, normalButtonHeight, resetToggles, smallButtonHeight, tinyButtonHeight;
       $doc = $(document);
       config = $.extend({
@@ -3635,13 +3635,13 @@
       } else {
         null;
       }
-      if ($.fn.foundationButtons) {
-        $doc.foundationButtons();
+      if ($.fn.Buttons) {
+        $doc.Buttons();
       } else {
         null;
       }
-      if ($.fn.foundationAccordion) {
-        $doc.foundationAccordion();
+      if ($.fn.Accordion) {
+        $doc.Accordion();
       } else {
         null;
       }

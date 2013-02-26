@@ -4,7 +4,7 @@
 ###
 (($, window, undefined_) ->
   "use strict"
-  $.fn.foundationAccordion = (options) ->
+  $.fn.Accordion = (options) ->
     
     # DRY up the logic used to determine if the event logic should execute.
     hasHover = (accordion) ->

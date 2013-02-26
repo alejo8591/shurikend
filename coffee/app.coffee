@@ -8,8 +8,8 @@
   Modernizr = window.Modernizr
   $(document).ready ->
     (if $.fn.Alerts then $doc.Alerts() else null)
-    (if $.fn.foundationButtons then $doc.foundationButtons() else null)
-    (if $.fn.foundationAccordion then $doc.foundationAccordion() else null)
+    (if $.fn.Buttons then $doc.Buttons() else null)
+    (if $.fn.Accordion then $doc.Accordion() else null)
     (if $.fn.foundationNavigation then $doc.foundationNavigation() else null)
     (if $.fn.foundationTopBar then $doc.foundationTopBar() else null)
     (if $.fn.foundationCustomForms then $doc.foundationCustomForms() else null)
