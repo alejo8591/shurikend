@@ -10,7 +10,7 @@
     (if $.fn.Alerts then $doc.Alerts() else null)
     (if $.fn.Buttons then $doc.Buttons() else null)
     (if $.fn.Accordion then $doc.Accordion() else null)
-    (if $.fn.foundationNavigation then $doc.foundationNavigation() else null)
+    (if $.fn.Navigation then $doc.Navigation() else null)
     (if $.fn.foundationTopBar then $doc.foundationTopBar() else null)
     (if $.fn.foundationCustomForms then $doc.foundationCustomForms() else null)
     (if $.fn.foundationMediaQueryViewer then $doc.foundationMediaQueryViewer() else null)

@@ -4,7 +4,7 @@
 ###
 (($, window, undefined_) ->
   "use strict"
-  $.fn.foundationNavigation = (options) ->
+  $.fn.Navigation = (options) ->
     lockNavBar = false
     
     # Windows Phone, sadly, does not register touch events :(

@@ -1609,7 +1609,7 @@
 
   (function($, window, undefined_) {
     "use strict";
-    return $.fn.foundationNavigation = function(options) {
+    return $.fn.Navigation = function(options) {
       var lockNavBar;
       lockNavBar = false;
       if (Modernizr.touch || navigator.userAgent.match(/Windows Phone/i)) {
@@ -3645,8 +3645,8 @@
       } else {
         null;
       }
-      if ($.fn.foundationNavigation) {
-        $doc.foundationNavigation();
+      if ($.fn.Navigation) {
+        $doc.Navigation();
       } else {
         null;
       }
