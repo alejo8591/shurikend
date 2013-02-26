@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 						'coffee/jquery-event-move.coffee',
 						'coffee/jquery-event-swipe.coffee',
 						'coffee/jquery-offcanvas.coffee',
-						'coffee/mediaQueryToggle.coffee',
+						'coffee/media-query-toggle.coffee',
 						'coffee/jquery-placeholder.coffee',
 						'coffee/alerts.coffee',
 						'coffee/accordion.coffee', 
@@ -25,7 +25,6 @@ module.exports = function(grunt) {
 						'coffee/topbar.coffee',
 						'coffee/joyride.coffee',
 						'coffee/magellan.coffee',
-						'coffee/clearing.coffee',
 						'coffee/orbit.coffee',
 						'coffee/app.coffee'
 					] // compile and concat into single file

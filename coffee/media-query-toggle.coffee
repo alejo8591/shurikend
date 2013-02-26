@@ -4,7 +4,7 @@
 ###
 (($, window) ->
   "use strict"
-  $.fn.foundationMediaQueryViewer = (options) ->
+  $.fn.MediaQueryViewer = (options) ->
     settings = $.extend(options, # Press 'M'
       toggleKey: 77
     )

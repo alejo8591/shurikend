@@ -692,7 +692,7 @@
 
   (function($, window) {
     "use strict";
-    return $.fn.foundationMediaQueryViewer = function(options) {
+    return $.fn.MediaQueryViewer = function(options) {
       var $doc, settings;
       settings = $.extend(options, {
         toggleKey: 77
@@ -3660,8 +3660,8 @@
       } else {
         null;
       }
-      if ($.fn.foundationMediaQueryViewer) {
-        $doc.foundationMediaQueryViewer();
+      if ($.fn.MediaQueryViewer) {
+        $doc.MediaQueryViewer();
       } else {
         null;
       }

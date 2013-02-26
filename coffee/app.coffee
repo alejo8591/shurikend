@@ -13,7 +13,7 @@
     (if $.fn.Navigation then $doc.Navigation() else null)
     (if $.fn.TopBar then $doc.TopBar() else null)
     (if $.fn.foundationCustomForms then $doc.foundationCustomForms() else null)
-    (if $.fn.foundationMediaQueryViewer then $doc.foundationMediaQueryViewer() else null)
+    (if $.fn.MediaQueryViewer then $doc.MediaQueryViewer() else null)
     (if $.fn.foundationTabs then $doc.foundationTabs({callback: $.foundation.customForms.appendCustomMarkup}) else null)
     (if $.fn.foundationTooltips then $doc.foundationTooltips() else null)
     (if $.fn.foundationMagellan then $doc.foundationMagellan() else null)
