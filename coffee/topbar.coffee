@@ -111,7 +111,7 @@
 
       settings.height = total
 
-  $.fn.foundationTopBar = (method) ->
+  $.fn.TopBar = (method) ->
     if methods[method]
       methods[method].apply this, Array::slice.call(arguments, 1)
     else if typeof method is "object" or not method

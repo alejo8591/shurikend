@@ -2125,7 +2125,7 @@
         return settings.height = total;
       }
     };
-    $.fn.foundationTopBar = function(method) {
+    $.fn.TopBar = function(method) {
       if (methods[method]) {
         return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
       } else if (typeof method === "object" || !method) {
@@ -3650,8 +3650,8 @@
       } else {
         null;
       }
-      if ($.fn.foundationTopBar) {
-        $doc.foundationTopBar();
+      if ($.fn.TopBar) {
+        $doc.TopBar();
       } else {
         null;
       }
