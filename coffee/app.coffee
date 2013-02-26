@@ -12,9 +12,9 @@
     (if $.fn.Accordion then $doc.Accordion() else null)
     (if $.fn.Navigation then $doc.Navigation() else null)
     (if $.fn.TopBar then $doc.TopBar() else null)
-    # (if $.fn.foundationCustomForms then $doc.foundationCustomForms() else null)
+    (if $.fn.CustomForms then $doc.CustomForms() else null)
     (if $.fn.MediaQueryViewer then $doc.MediaQueryViewer() else null)
-    (if $.fn.Tabs then $doc.Tabs({callback: $.foundation.customForms.appendCustomMarkup}) else null)
+    (if $.fn.Tabs then $doc.Tabs({callback: $.shurikend.customForms.appendCustomMarkup}) else null)
     (if $.fn.Tooltips then $doc.Tooltips() else null)
     (if $.fn.Magellan then $doc.Magellan() else null)
 

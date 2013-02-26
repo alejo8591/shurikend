@@ -1307,9 +1307,9 @@
         }
       };
     };
-    jQuery.foundation = jQuery.foundation || {};
-    jQuery.foundation.customForms = jQuery.foundation.customForms || {};
-    $.foundation.customForms.appendCustomMarkup = function(options) {
+    jQuery.shurikend = jQuery.shurikend || {};
+    jQuery.shurikend.customForms = jQuery.shurikend.customForms || {};
+    $.shurikend.customForms.appendCustomMarkup = function(options) {
       var appendCustomMarkup, appendCustomSelect, defaults;
       appendCustomMarkup = function(idx, sel) {
         var $span, $this, type;
@@ -1520,7 +1520,7 @@
       $select[0].selectedIndex = selectedIndex;
       return $select.trigger("change");
     });
-    return $.fn.foundationCustomForms = $.foundation.customForms.appendCustomMarkup;
+    return $.fn.CustomForms = $.shurikend.customForms.appendCustomMarkup;
   })(jQuery);
 
 }).call(this);
@@ -2131,7 +2131,7 @@
       } else if (typeof method === "object" || !method) {
         return methods.init.apply(this, arguments);
       } else {
-        return $.error("Method " + method + " does not exist on jQuery.foundationTopBar");
+        return $.error("Method " + method + " does not exist on jQuery.TopBar");
       }
     };
     if ($(".sticky").length > 0) {
@@ -3655,6 +3655,11 @@
       } else {
         null;
       }
+      if ($.fn.CustomForms) {
+        $doc.CustomForms();
+      } else {
+        null;
+      }
       if ($.fn.MediaQueryViewer) {
         $doc.MediaQueryViewer();
       } else {
@@ -3662,7 +3667,7 @@
       }
       if ($.fn.Tabs) {
         $doc.Tabs({
-          callback: $.foundation.customForms.appendCustomMarkup
+          callback: $.shurikend.customForms.appendCustomMarkup
         });
       } else {
         null;

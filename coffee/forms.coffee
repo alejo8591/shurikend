@@ -101,9 +101,9 @@
 
   # end reset
   # end return
-  jQuery.foundation = jQuery.foundation or {}
-  jQuery.foundation.customForms = jQuery.foundation.customForms or {}
-  $.foundation.customForms.appendCustomMarkup = (options) ->
+  jQuery.shurikend = jQuery.shurikend or {}
+  jQuery.shurikend.customForms = jQuery.shurikend.customForms or {}
+  $.shurikend.customForms.appendCustomMarkup = (options) ->
     appendCustomMarkup = (idx, sel) ->
       $this = $(sel).hide()
       type = $this.attr("type")
@@ -457,5 +457,5 @@
     $select[0].selectedIndex = selectedIndex
     $select.trigger "change"
 
-  $.fn.foundationCustomForms = $.foundation.customForms.appendCustomMarkup
+  $.fn.CustomForms = $.shurikend.customForms.appendCustomMarkup
 ) jQuery

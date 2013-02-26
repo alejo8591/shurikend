@@ -117,7 +117,7 @@
     else if typeof method is "object" or not method
       methods.init.apply this, arguments
     else
-      $.error "Method " + method + " does not exist on jQuery.foundationTopBar"
+      $.error "Method " + method + " does not exist on jQuery.TopBar"
 
   
   # Monitor scroll position for sticky
