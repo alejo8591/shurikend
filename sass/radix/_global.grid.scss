@@ -14,12 +14,14 @@
 
     &.collapse {
       .column, .columns { padding: 0; }
+
     }
     .row { 
       width: auto; 
       max-width: none; 
       min-width: 0; 
       margin: 0 (-($columnGutter/2));
+
       &.collapse { margin: 0; }
     }
   }
@@ -66,13 +68,17 @@
   @for $i from 2 through $totalColumns - 2 {
     .push-#{convert-number-to-word($i)} { 
       #{$defaultFloat}: gridCalc($i, $totalColumns); }
+      
     .pull-#{convert-number-to-word($i)} { 
       #{$defaultOpposite}: gridCalc($i, $totalColumns); }
   }
 
   img { height: auto; }
+
   img, object, embed { max-width: 100%; }
+
   img { -ms-interpolation-mode: bicubic; }
+
   #map_canvas img, .map_canvas img {max-width: none!important;}
 
   // Nicolas Gallagher's micro clearfix

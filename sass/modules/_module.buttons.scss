@@ -290,7 +290,8 @@
           margin-top: -2px; }
       }
 
-      &.secondary>span:after { @include cssTriangle(6px, darken(($secondaryColor), 80%), top); }
+      &.secondary>span:after { 
+        @include cssTriangle(6px, darken(($secondaryColor), 80%), top); }
 
       &.large span { width: $largeBtnBase * 3; }
       &.small span { width: $smallBtnBase * 3; }
@@ -325,9 +326,12 @@
 
       &.secondary>a { color: darken(($secondaryColor), 80%); }
 
-      &.alert>a:hover, &.alert>span:hover, &.alert>a:focus, &.alert>span:focus { background-color: darken($alertColor, 10%); }
-      &.success>a:hover, &.success>span:hover, &.success>a:focus, &.success>span:focus { background-color: darken($successColor, 10%); }
-      &.secondary>a:hover, &.secondary>span:hover, &.secondary>a:focus, &.secondary>span:focus { background-color: darken($secondaryColor, 10%); }
+      &.alert>a:hover, &.alert>span:hover, &.alert>a:focus, &.alert>span:focus { 
+        background-color: darken($alertColor, 10%); }
+      &.success>a:hover, &.success>span:hover, &.success>a:focus, &.success>span:focus { 
+        background-color: darken($successColor, 10%); }
+      &.secondary>a:hover, &.secondary>span:hover, &.secondary>a:focus, &.secondary>span:focus { 
+        background-color: darken($secondaryColor, 10%); }
     }
   }
 
@@ -380,6 +384,10 @@
   }
 
   div.button-bar { overflow: hidden;
-    ul.button-group { float: $defaultFloat; margin-#{$defaultOpposite}: 8px; }
+    
+    ul.button-group { 
+      float: $defaultFloat; 
+      margin-#{$defaultOpposite}: 8px; }
+      
     ul.button-group:last-child { margin-#{$defaultFloat}: 0; }
   }

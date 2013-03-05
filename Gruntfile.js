@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 		coffee: {
 			compile: {
 				files: {
-					'test/assets/javascripts/shurikend.js': 
+					'experiments/assets/javascripts/shurikend.js': 
 					[
 						'coffee/jquery-cookie.coffee',
 						'coffee/jquery-event-move.coffee',
@@ -20,13 +20,14 @@ module.exports = function(grunt) {
 						'coffee/tooltips.coffee',
 						'coffee/forms.coffee',
 						'coffee/tabs.coffee',
-						'coffee/navigation.coffee',
+						'coffee/cursorup.coffee',
 						'coffee/modal.coffee',
 						'coffee/topbar.coffee',
-						'coffee/joyride.coffee',
+						'coffee/nextstep.coffee',
 						'coffee/magellan.coffee',
-						'coffee/orbit.coffee',
-						'coffee/app.coffee'
+						'coffee/slide.coffee',
+						'coffee/app.coffee',
+						'coffee/retina.coffee'
 					] // compile and concat into single file
     			}
   			}
@@ -36,7 +37,7 @@ module.exports = function(grunt) {
 	    dist: {
 	      options: {
 	        config: 'config.rb',  // css_dir = 'dev/css'
-	        cssDir: 'test/assets/css/',
+	        cssDir: 'experiments/assets/css/',
 			}
 	      }
 	     }

@@ -1,0 +1,17 @@
+// retina.scss
+// Defaults to png but can be overwritten to jpg or gif
+//$image name is equal to the image name with out it's extention - 'example.png' would be defined as 'example'
+// A helper mixin for applying high-resolution background images (http://www.retinajs.com)
+//$imageName: 'test.png'; 
+//$wRetina: auto;
+//$hRetina: auto; 
+//$extention:'.png';
+@mixin at2x($imageName, $wRetina:auto, $hRetina:auto, $extention:'.png') {
+  background-image: image_url($imageName + $extention);
+  $x2img : $imageName + '@2x' + $extention;
+
+  @media all and (-webkit-min-device-pixel-ratio : 1.5) {
+    background-image: image_url($x2img);
+    background-size: $wRetina $hRetina;
+  }  
+}
