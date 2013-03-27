@@ -31,7 +31,6 @@
   if Modernizr.touch and not window.location.hash
     $(window).load ->
       setTimeout (->
-        
         # At load, if user hasn't scrolled more than 20px or so...
         window.scrollTo 0, 1  if $(window).scrollTop() < 20
       ), 0

@@ -1,6 +1,7 @@
 // Settings file containing Foundation defaults
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
-@import url("http://fonts.googleapis.com/css?family=Lato:300italic");
+// Font Principal Expletus-Sans
+@import url(http://fonts.googleapis.com/css?family=Expletus+Sans:400,500italic,700);
+
 // Grid Settings
 $rowWidth: 		1000px !default;
 $columnGutter: 	  30px !default;
@@ -10,26 +11,24 @@ $mobileTotalColumns: 4 !default;
 $blockGridElements: 12 !default;
 
 // Colors Settings
-
-$mainColor: 		#2aa5ca !default;
-$secondaryColor: 	#bababa !default;
+$mainColor: 		#ed0e15 !default;
+$secondaryColor: 	#848688 !default;
 $alertColor: 		#ee2429 !default;
 $successColor: 		#5da322 !default;
 $txtColor: 			#232323 !default;
 $highlightColor: 	#feff70 !default;
 $black: 			   #333 !default;
 $white: 			   #fff !default;
-$shinyEdge:  rgba(#fff, .5) !default;
-$darkEdge:   rgba(#000, .2) !default;
+$shinyEdge:  rgba(#fff, .6) !default;
+$darkEdge:   rgba(#000, .3) !default;
 
 // Font Settings
-
 $fontSmoothing:  antialiased !default;
-$headerFontFamily: "Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$headerFontFamily: 'Expletus Sans', Helvetica, Arial, sans-serif !default;
 $headerFontWeight: 		bold !default;
 $headerFontStyle: 	  normal !default;
 $headerFontColor: 		#222 !default;
-$bodyFontFamily:  "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$bodyFontFamily:  'Expletus Sans', Helvetica, Arial, sans-serif !default;
 $bodyFontWeight: 	  normal !default;
 $bodyFontStyle: 	  normal !default;
 $bodyFontColor:    $txtColor !default;
@@ -51,7 +50,6 @@ $defaultOpposite: right !default;
 }
 
 // Button Settings
-
 $buttonRadius: 3px !default;
 $btnBase: 	  10px !default;
 
@@ -60,7 +58,6 @@ $smallBtnBase: $btnBase - 3 !default;
 $largeBtnBase: $btnBase + 5 !default;
 
 // Form Settings
-
 $formSpacing:    12px !default;
 $labelFontWeight: 500 !default;
 $labelFontColor: lighten(#000, 30%) !default;
@@ -77,7 +74,6 @@ $inputBorderRadius:  2px !default;
 $fieldsetBorderRadius: 3px !default;
 
 // Custom Form Settings
-
 $custFormBorderColor: #ccc !default;
 $custFormBgColor:     #fff !default;
 $custCheckColor:      #222 !default;
@@ -95,17 +91,14 @@ $custDropdownSelectedFontColor: #000 !default;
 $custFormDisabledBgColor:       #ddd !default;
 
 // Tab Settings
-
 $tabHeight: 40px !default;
 $tabTermFontSize:    12px;
 
 // Nav Bar Settings
-
 $navBarHeight:        40px !default;
 $navFlyoutBaseWidth: 250px !default;
 
 // Top Bar Settings
-
 $topBarBgColor:      #222 !default;
 $topBarHeight:       45px !default;
 $topBarHeightMobile: 45px !default;
@@ -129,7 +122,6 @@ $topBarNavToggleSize:  8px !default;
 $topBarNavToggleColor: #fff !default;
 
 // UI Settings
-
 $thumbRadius: 3px !default;
 $progBarHeight: 25px !default;
 $progBarBorderColor: darken(#fff, 20%) !default;
@@ -140,7 +132,6 @@ $tableBorderRadius: 3px !default;
 $alertBorderRadius: 3px !default;
 
 // Tooltip Settings
-
 $hasTipBorderBottom: dotted 1px #ccc !default;
 $hasTipFontWeight: bold !default;
 $hasTipFontColor:  #333 !default;
@@ -159,7 +150,6 @@ $tooltipBgOpacityScreenSm: 0.85 !default;
 $tooltipBorderRadius: 4px !default;
 
 // Pricing Table Settings
-
 $priceTableBorder:  solid 1px #ddd !default;
 $priceTitleBgColor: #ddd !default;
 $priceTitlePadding: 15px 20px !default;
@@ -209,27 +199,7 @@ $orbitSlideNumBgColor: rgba(0,0,0,0.7) !default;
 $orbitSlideNumFontColor: #fff !default;
 $orbitSlideNumPadding:    5px !default;
 
-// Clearing Settings
-
-$clearingBg:    rgba(0,0,0,0.8) !default;
-$clearingOldBrowserBg: rgb(0,0,0) !default;
-$clearingCaptionBg: rgba(0,0,0,0.7) !default;
-$clearingCaptionOldBrowserBg: rgb(0,0,0) !default;
-$clearingCaptionFontColor: #fff !default;
-$clearingCloseColor: #fff !default;
-$clearingArrowColor: #fff !default;
-$clearingArrowSize:  16px !default;
-$clearingCarouselBg: rgba(0,0,0,0.75) !default;
-$clearingCarouselOldBrowserBg: rgb(0,0,0) !default;
-$clearingCarouselHeight: 150px !default;
-$clearingActiveImgHeight:  75% !default;
-$clearingCarouselThumbWidth: 175px;
-$clearingCarouselThumbActiveBorder: 4px solid rgb(255,255,255) !default;
-$clearingImgBg: rgba(0,0,0,0.75) !default;
-$clearingImgOldBrowserBg: rgb(0,0,0) !default;
-
 // Joyride Settings
-
 $tipBg: rgba(0,0,0,0.8) !default;
 $tipBgIE8:     #000 !default;
 $tipFontColor: #fff !default;
@@ -249,7 +219,6 @@ $tipCloseWeight: normal !default;
 $tipScreenFill: rgba(0,0,0,0.5) !default;
 
 // Off Canvas Width Settings
-
 $mainWidth: 80% !default;
 $complementaryWidth: 20% !default;
 
@@ -264,7 +233,6 @@ $base-size: $baseFontSize $importantModNum;
 // https://github.com/scottkellum/modular-scale by scottkellum
 
 // Media Queries
-
 $screenSmall: 768px !default;
 $screenMedium: 1279px !default;
 $screenXlarge: 1441px !default;

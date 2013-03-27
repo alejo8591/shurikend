@@ -136,8 +136,8 @@
     };
     identifiedTouch = function(touchList, id) {
       var i, l;
-      i = void 0;
-      l = void 0;
+      i = undefined_;
+      l = undefined_;
       if (touchList.identifiedTouch) {
         return touchList.identifiedTouch(id);
       }
@@ -167,7 +167,7 @@
     };
     mousedown = function(e) {
       var data;
-      data = void 0;
+      data = undefined_;
       if (!isLeftButton(e)) {
         return;
       }
@@ -194,12 +194,11 @@
     };
     touchstart = function(e) {
       var template, touch;
-      touch = void 0;
-      template = void 0;
+      touch = undefined_;
+      template = undefined_;
       if (ignoreTags[e.target.tagName.toLowerCase()]) {
         return;
       }
-      touch = e.changedTouches[0];
       template = {
         target: touch.target,
         startX: touch.pageX,
@@ -251,8 +250,8 @@
     triggerStart = function(e, template, touch, distX, distY, fn) {
       var node, time, touches;
       node = template.target;
-      touches = void 0;
-      time = void 0;
+      touches = undefined_;
+      time = undefined_;
       touches = e.targetTouches;
       time = e.timeStamp - template.timeStamp;
       template.type = "movestart";
@@ -402,8 +401,8 @@
       remove: removeMethod,
       _default: function(e) {
         var data, template;
-        template = void 0;
-        data = void 0;
+        template = undefined_;
+        data = undefined_;
         if (!e._handled()) {
           return;
         }

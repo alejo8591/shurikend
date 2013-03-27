@@ -38,5 +38,4 @@
             false
 
           $(this).children(".flyout").hide()  unless hasFocus(inputs)
-
 ) jQuery, this

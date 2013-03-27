@@ -97,8 +97,8 @@
     # mouse button, or when a modifier key is pressed.
     e.which is 1 and not e.ctrlKey and not e.altKey
   identifiedTouch = (touchList, id) ->
-    i = undefined
-    l = undefined
+    i = undefined_
+    l = undefined_
 
     return touchList.identifiedTouch(id)  if touchList.identifiedTouch
     
@@ -121,7 +121,7 @@
   
   # Handlers that decide when the first movestart is triggered
   mousedown = (e) ->
-    data = undefined
+    data = undefined_
     return  unless isLeftButton(e)
     data =
       target: e.target
@@ -140,12 +140,12 @@
     remove document, mouseevents.move, mousemove
     remove document, mouseevents.cancel, removeMouse
   touchstart = (e) ->
-    touch = undefined
-    template = undefined
+    touch = undefined_
+    template = undefined_
     
     # Don't get in the way of interaction with form elements.
     return  if ignoreTags[e.target.tagName.toLowerCase()]
-    touch = e.changedTouches[0]
+    # touch = e.changedTouches[0]
     
     # iOS live updates the touch objects whereas Android gives us copies.
     # That means we can't trust the touchstart object to stay the same,
@@ -194,8 +194,8 @@
     e._handled()
   triggerStart = (e, template, touch, distX, distY, fn) ->
     node = template.target
-    touches = undefined
-    time = undefined
+    touches = undefined_
+    time = undefined_
     touches = e.targetTouches
     time = e.timeStamp - template.timeStamp
     
@@ -365,8 +365,8 @@
     add: addMethod
     remove: removeMethod
     _default: (e) ->
-      template = undefined
-      data = undefined
+      template = undefined_
+      data = undefined_
       
       # If no move events were bound to any ancestors of this
       # target, high tail it out of here.
