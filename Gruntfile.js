@@ -25,9 +25,10 @@ module.exports = function(grunt) {
 						'coffee/topbar.coffee',
 						'coffee/nextstep.coffee',
 						'coffee/magellan.coffee',
+						'coffee/navigation.coffee',
 						'coffee/slide.coffee',
 						'coffee/app.coffee',
-						'coffee/retina.coffee'
+						// 'coffee/retina.coffee'
 					] // compile and concat into single file
     			}
   			}

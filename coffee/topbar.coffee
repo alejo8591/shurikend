@@ -9,7 +9,6 @@
 # * Free to use under the MIT license.
 # * http://www.opensource.org/licenses/mit-license.php
 #
-
 #jslint unparam: true, browser: true, indent: 2 
 (($, window) ->
   "use strict"

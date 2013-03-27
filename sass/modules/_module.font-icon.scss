@@ -160,9 +160,9 @@
   .button .icon-spin.icon-large { height: .75em; }
 }
 
-.at2x{
-  @include at2x('shurikend.jpg', auto, auto, 'jpg');
-}
+//.at2x{
+  //@include at2x('shurikend.jpg', auto, auto, 'jpg');
+//}
 /* icons for social */
 @include i-class(thumb-up,"000");
 @include i-class(thumb-down,"001");

@@ -199,6 +199,7 @@
       if (ignoreTags[e.target.tagName.toLowerCase()]) {
         return;
       }
+      touch = e.changedTouches[0];
       template = {
         target: touch.target,
         startX: touch.pageX,
@@ -2632,6 +2633,67 @@
 
 /*
   Inspired in foundation v.3.2
+  navigation: navigation.coffee
+*/
+
+
+(function() {
+
+  (function($, window, undefined_) {
+    "use strict";    return $.fn.Navigation = function(options) {
+      var lockNavBar;
+      lockNavBar = false;
+      if (Modernizr.touch || navigator.userAgent.match(/Windows Phone/i)) {
+        $(document).on("click.fndtn touchstart.fndtn", ".nav-bar a.flyout-toggle", function(e) {
+          var flyout;
+          e.preventDefault();
+          flyout = $(this).siblings(".flyout").first();
+          if (lockNavBar === false) {
+            $(".nav-bar .flyout").not(flyout).slideUp(500);
+            flyout.slideToggle(500, function() {
+              return lockNavBar = false;
+            });
+          }
+          return lockNavBar = true;
+        });
+        return $(".nav-bar>li.has-flyout", this).addClass("is-touch");
+      } else {
+        return $(".nav-bar>li.has-flyout", this).on("mouseenter mouseleave", function(e) {
+          var flyout, hasFocus, inputs;
+          if (e.type === "mouseenter") {
+            $(".nav-bar").find(".flyout").hide();
+            $(this).children(".flyout").show();
+          }
+          if (e.type === "mouseleave") {
+            flyout = $(this).children(".flyout");
+            inputs = flyout.find("input");
+            hasFocus = function(inputs) {
+              var focus;
+              focus = undefined_;
+              if (inputs.length > 0) {
+                inputs.each(function() {
+                  if ($(this).is(":focus")) {
+                    return focus = true;
+                  }
+                });
+                return focus;
+              }
+              return false;
+            };
+            if (!hasFocus(inputs)) {
+              return $(this).children(".flyout").hide();
+            }
+          }
+        });
+      }
+    };
+  })(jQuery, this);
+
+}).call(this);
+
+
+/*
+  Inspired in foundation v.3.2
   orbit: orbit.coffee
 */
 
@@ -3577,49 +3639,5 @@
       });
     }
   })(jQuery, this);
-
-}).call(this);
-
-(function() {
-
-  if (window.devicePixelRatio > 1) {
-    window.onload = function() {
-      var image, is_external, load, _i, _len, _ref, _results;
-      is_external = function(href) {
-        return !!(href.match(/^https?\:/i) && !href.match(document.domain));
-      };
-      _ref = document.getElementsByTagName("img");
-      _results = [];
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        image = _ref[_i];
-        _results.push((load = function() {
-          var at_2x_path, extension, height, http, path, path_segments, path_without_extension, width;
-          if (!image.complete) {
-            return setTimeout(load, 5);
-          } else {
-            path = image.getAttribute("src");
-            if (is_external(path)) {
-              return;
-            }
-            width = image.offsetWidth;
-            height = image.offsetHeight;
-            path_segments = path.split('.');
-            path_without_extension = path_segments.slice(0, path_segments.length - 1).join(".");
-            extension = path_segments[path_segments.length - 1];
-            at_2x_path = "" + path_without_extension + "@2x." + extension;
-            http = new XMLHttpRequest();
-            http.open('HEAD', at_2x_path, false);
-            http.send();
-            if (http.status === 200) {
-              image.setAttribute('width', width);
-              image.setAttribute('height', height);
-              return image.setAttribute("src", at_2x_path);
-            }
-          }
-        })());
-      }
-      return _results;
-    };
-  }
 
 }).call(this);

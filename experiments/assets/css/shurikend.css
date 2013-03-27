@@ -6130,18 +6130,6 @@ table.hide-for-medium {
   }
 }
 
-/* line 163, ../../../sass/modules/_module.font-icon.scss */
-.at2x {
-  background-image: url('/images/shurikend.jpgjpg');
-}
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
-  /* line 163, ../../../sass/modules/_module.font-icon.scss */
-  .at2x {
-    background-image: url('/images/shurikend.jpg@2xjpg');
-    background-size: auto auto;
-  }
-}
-
 /* icons for social */
 /* line 3, ../../../sass/radix/_mixin.font-icons.scss */
 .icon-thumb-up:before {

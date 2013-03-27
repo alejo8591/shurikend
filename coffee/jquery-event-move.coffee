@@ -145,7 +145,7 @@
     
     # Don't get in the way of interaction with form elements.
     return  if ignoreTags[e.target.tagName.toLowerCase()]
-    # touch = e.changedTouches[0]
+    touch = e.changedTouches[0]
     
     # iOS live updates the touch objects whereas Android gives us copies.
     # That means we can't trust the touchstart object to stay the same,
