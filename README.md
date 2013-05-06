@@ -50,7 +50,6 @@ No developer required.
 
 [For more information in Spanish the following tutorial can help!](http://html5facil.com/tutoriales/sass-para-aplicar-en-proyectos-css-y-html5)
 
-
 ## Versioning
 
 For transparency and insight into our release cycle, and for striving to maintain backward compatibility, Bootstrap will be maintained under the Semantic Versioning guidelines as much as possible.
