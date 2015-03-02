@@ -1,4 +1,4 @@
-# [shurikend 0.1.0 ()]()
+# [shurikend 0.1.0 ()]
 
 ## Quick start
 
@@ -89,15 +89,15 @@ Keep track of development and community news.
 * Follow [@maquetafacil on Twitter](http://twitter.com/maquetafacil).
 
 
-## Important information from the original version released (tuktuk)
+## Important information from the original version released (Shurikend)
 ### This isn't another frontend framework... is a way to create sites and extend them with your own style.?
 More info in http://tuktuk.tapquo.com
 
-[Source code](https://github.com/soyjavi/tuktuk) and [issue tracking](https://github.com/soyjavi/tuktuk/issues) are available on Github.
+[Source code](https://github.com/alejo8591/shurikend) and [issue tracking](https://github.com/alejo8591/shurikend/issues) are available on Github.
 
 ## Credits
-Created by [Alejandro Romero](http://twitter.com/soyjavi).
-Copyright (c) 2012, 2013 by html5facil.
+Created by [Alejandro Romero](http://twitter.com/alejo8591).
+Copyright (c) 2012, 2013 by Alejandro Romero.
 
 ## Licensing Options
 Released under MIT license
