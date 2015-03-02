@@ -1,4 +1,4 @@
-# [shurikend 0.1.0 ()]
+# [shurikend 0.1.0]()
 
 ## Quick start
 
